@@ -1,6 +1,6 @@
 #Salesforce Smart Refrigerator
 
-The following Trailhead project will use an Electric Imp to monitor a refrigerator and a Salesforce *Connected App* to track the current temperature and humidity in the fridge.  This example will also *open a case* in Salesforce if:  1) the refrigerator door is open for more than 30 seconds, or 2) the temperature remains over 11°C for more than 15 min, or 3) the relative humidity is over 70% for more than 15 min.  To track the current temperature and humidity we will create a Salesforce *custom object*, then update it with new readings every 15 sec.
+The following Trailhead project will use the Electric Imp platform to monitor a refrigerator and a Salesforce *Connected App* to track the current temperature and humidity in the fridge.  This example will also *open a case* in Salesforce if:  1) the refrigerator door is open for more than 30 seconds, or 2) the temperature remains over 11°C for more than 15 min, or 3) the relative humidity is over 70% for more than 15 min.  To track the current temperature and humidity we will create a Salesforce *custom object*, then update it with new readings every 15 sec.
 
 
 ## What you need
@@ -16,7 +16,7 @@ The following Trailhead project will use an Electric Imp to monitor a refrigerat
   - A [Salesforce developer account](https://developer.salesforce.com/signup?d=70130000000td6N)
 
 ### Hardware
-  - An Electric Imp developer kit - to purchase email saleforce.devkit@electricimp.com
+  - An Electric Imp developer kit - to purchase email trailhead@electricimp.com
 
 And if you want to install the board into a fridge:
 
@@ -27,10 +27,10 @@ And if you want to install the board into a fridge:
 
 ### Step 1: Setup the Electric Imp hardware
 
-First we will need to assemble the Electric Imp Developer Kit.  The kit comes with the imp001 card, which drives all the logic for the board, the breakout board and an environmental sensor "tail".  A tail is a specific kind of board which can be swapped out with the breakout board.  For this project the environmental sensor will read temperature, humidity and light to determine the current state of your fridge.
+First we will need to assemble the Electric Imp Developer Kit.  The kit comes with (1) the imp001 card, which includes a WiFi radio and microcontroller that drives all the logic for the board  (2) the breakout board into which the card fits and (3) an environmental sensor "tail".  A tail is a specific kind of board which connects to the breakout board and provides a set of sensors or other peripherals that are ready to use.  For this project the environmental sensor tail will read temperature, humidity and light to determine the current state of your fridge.
 
 #### Hardware Setup
- - Plug the imp001 card into the breakout board slot.  
+ - Plug the imp001 card into the breakout board slot 
  - Connect the Env Sensor tail to the April breakout board
  - Power up your Imp with the USB cable and power adapter
  - The imp001 should now have power and be blinking amber/red
@@ -43,7 +43,7 @@ Assmbled it should look like this:
 
 Use the Electric Imp mobile app to BlinkUp your device
 
- - Log into your Electric Imp account.  
+ - Log into your Electric Imp account
  - Enter your WIFI credentials
  - Follow the instructions in the app to [BlinkUp](https://electricimp.com/platform/blinkup/) your device
 
